@@ -1,0 +1,24 @@
+<mujoco model="Crab">
+  <worldbody>
+    <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1"/>
+    <geom type="plane" size="1 1 0.1" rgba="0 .61 0.76 1"/>
+    <body pos="0 0 1">
+      <joint name="body" type="free"/>
+      <geom type="ellipsoid" size=".18 .13 .07" rgba=".95 .3 0 1" group="0"/>
+      <!-- <body name="Left Arm" pos="-0.26 0 0">
+        <geom type="cylinder" size=".02 0.09" rgba=".95 .3 0 0.8" euler="0 90 0" group="0"/>
+      </body> -->
+      <!-- <body name="Right Arm" pos="0.26 0 0"> 
+        <geom type="cylinder" size=".02 0.09" rgba=".95 .3 0 0.8" euler="0 90 0"/>
+      </body> -->
+      <body pos="-0.05 -0.12 0.02"> 
+        <joint name="lefteye" type="hinge"/>
+        <geom type="sphere" size=".02 0.02" rgba="0 0 0 0.8" euler="0 90 0"/>
+      </body>
+      <body pos="0.05 -0.12 0.02"> 
+        <joint name="righteye" type="hinge"/>
+        <geom type="sphere" size=".02 0.02" rgba="0 0 0 0.8" euler="0 90 0"/>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
